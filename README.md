@@ -8,4 +8,4 @@ Piotr Otta       18902
 Mateusz Palewski 18903
 Michał Kuźmiński 18888
 
-![Shrekenger Logo](https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/OCS-17/HTML%20CSS%20ChatBox%20Design/Assets/Logo_Shrekenger_gradient.png =250x250)
+![Shrekenger Logo](https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/OCS-17/HTML%20CSS%20ChatBox%20Design/Assets/Logo_Shrekenger_gradient.png){:height="50%" width="50%"}
