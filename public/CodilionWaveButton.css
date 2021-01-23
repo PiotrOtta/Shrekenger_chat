@@ -1,9 +1,9 @@
-button {
+.buttonix {
 	position: absolute;
 	padding: 10px 20px;
 	text-decoration: none;
 	text-transform: uppercase;
-	width: 160px;
+	width: 130px;
 	overflow: hidden;
 	border: 0;
 	right: 5px;
@@ -11,14 +11,14 @@ button {
 	border-radius: 20px;
 	cursor: pointer;
 }
-button span {
+.buttonix span {
 	position: relative;
 	z-index: 1;
 	color: #fff;
-	font-size: 20px;
+	font-size: 13px;
 	letter-spacing: 6px;
 }
-button .wave {
+.buttonix .wave {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -28,11 +28,11 @@ button .wave {
 	box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
 	transition: 0.5s;
 }
-button:hover .wave {
+.buttonix:hover .wave {
 	top: -100px;
 }
-button .wave:before,
-button .wave:after {
+.buttonix .wave:before,
+.buttonix .wave:after {
 	content: '';
 	position: absolute;
 	width: 200%;
@@ -42,12 +42,12 @@ button .wave:after {
 	transform: translate(-50%,-75%);
 	background: #000;
 }
-button .wave:before {
+.buttonix .wave:before {
 	border-radius: 45%;
 	background: rgba(20,20,20,1);
 	animation: animacja_wave 5s linear infinite;
 }
-button .wave:after {
+.buttonix .wave:after {
 	border-radius: 35%;
 	background: rgba(20,20,20,0.6);
 	animation: animacja_wave 5s linear infinite;

@@ -16,3 +16,11 @@ Michał Kuźmiński 18888 </br>
 
 <h1>WAŻNE</h1>
 <p>Hierachia nie posiada folderu Node modules!</p>
+
+<p>Instalacja projektu</p>
+vue create shrekenger |Vue 2</br>
+npm install bootstrap@next</br>
+npm i @popperjs/core</br>
+npm install --save portal-vue</br>
+npm install vue bootstrap bootstrap-vue</br>
+//copy github hierarchy</br>
