@@ -1,7 +1,8 @@
-<!-- Tutaj jest nagłówek -->
 <template>
-  <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Logo_Shrekenger_gradient.png">
-  <Shrekenger msg="Shrekenger"/>
+  <div id="app">
+    <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Logo_Shrekenger_gradient.png">
+    <Shrekenger msg="Shrekenger"/>
+  </div>
 </template>
 
 <script>
@@ -26,5 +27,8 @@ export default {
 }
 #app #Shrekenger {
   width: 10%;
+}
+footer {
+  padding-top: 20px;
 }
 </style>

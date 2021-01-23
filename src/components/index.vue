@@ -1,9 +1,18 @@
+<style>
+#tooltip {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+</style>
 <template>
 	<div class="container">
 		<div class="chatbox">
 			<div class="GornyPasek">
 				<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-				<div class="name">Shrek</div>
+				<div class="name">Pokój 1: Bagno</div>
 			</div>
 			<div class="middle">
 				<div>
@@ -35,7 +44,7 @@
 			<div class="bottom-bar">
 				<div>
 					<input type="text" placeholder="Wpisz wiadomość..." />
-					<button>
+					<button class="buttonix">
 						<span>Wyślij</span>
 						<div class="wave"></div>
 					</button>
