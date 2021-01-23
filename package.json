@@ -1,0 +1,16 @@
+{
+  "name": "Shrekenger chat",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Mateusz Palewski - Backend",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "express": "~4.17.1",
+    "socket.io": "^3.1.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
