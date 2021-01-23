@@ -13,3 +13,6 @@ Michał Kuźmiński 18888 </br>
 
 <h2>Zrzut ekranu przedstawiający chat Shrekenger</h2>
 <img src="https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/OCS-17/HTML%20CSS%20ChatBox%20Design/Assets/ShrekengerChat.png" width="700">
+
+<h1>WAŻNE</h1>
+<p>Hierachia nie posiada folderu Node modules!</p>
