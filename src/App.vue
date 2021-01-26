@@ -42,4 +42,7 @@ footer {
   padding-top: 20px;
   overflow-wrap: break-word;
 }
+footer {
+  padding-top: 20px;
+}
 </style>
