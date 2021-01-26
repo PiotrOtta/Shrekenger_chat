@@ -43,16 +43,16 @@
 			</div>
 			<div class="bottom-bar">
 				<div>
-					<input type="text" placeholder="Wpisz wiadomość..." />
-					<button class="buttonix">
-						<span>Wyślij</span>
-						<div class="wave"></div>
-					</button>
+          <input type="text" placeholder="Wpisz wiadomość..." />
+          <button class="buttonix">
+            <span>Wyślij</span>
+            <div class="wave"></div>
+          </button>
 				</div>
 			</div>
 		</div>
-		<div class="containerPokoje">
-			<div class="dostepnePokoje">Dostępne pokoje</div>
+		<div class="containerPokoje d-none d-sm-block">
+			<div class="dostepnePokoje d-none d-sm-block">Dostępne pokoje</div>
 			<ul class="ListaPokoje">
 				<li class="pokoj focus">
 					<span class="title">Pokój 1: Bagno </span>
@@ -81,12 +81,12 @@
 				</li>
 			</ul>
 		</div>
-		<div class="cointainerOsoby">
+		<div class="cointainerOsoby d-none d-lg-block">
 			<div class="profil">
 				<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-				<div class="name2">Shrek<p class="email">shrek@swamp.com</p></div>
+				<div class="name2">Shrek<p class="email text-wrap">Twoja nazwa</p></div>
 			</div>
-			<div class="dostepniUzytkownicy">Dostępni użytkownicy</div>
+			<div class="dostepniUzytkownicy d-none d-sm-block">Dostępni użytkownicy</div>
 			<ul class="ListaUzytkownikow">
 				<li class="user">
 					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
@@ -125,6 +125,10 @@
 					<span class="title">Bydle</span>
 				</li>
 				<li class="user">
+					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
+					<span class="title">Bydle</span>
+				</li>
+        <li class="user">
 					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
 					<span class="title">Bydle</span>
 				</li>
