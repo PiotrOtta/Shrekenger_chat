@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Logo_Shrekenger_gradient.png">
+    <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Shrekenger.png">
     <Shrekenger msg="Shrekenger"/>
   </div>
 </template>
