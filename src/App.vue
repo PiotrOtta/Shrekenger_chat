@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Logo_Shrekenger_gradient.png">
+  <div class="container-fluid" id="app">
+    <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Shrekenger.png">
     <Shrekenger msg="Shrekenger"/>
   </div>
 </template>
@@ -17,6 +17,19 @@ export default {
 </script>
 
 <style>
+html {
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, #2effbc, #4bbb1d);
+  overflow: hidden;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,8 +38,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-#app #Shrekenger {
-  width: 10%;
+footer {
+  padding-top: 20px;
+  overflow-wrap: break-word;
 }
 footer {
   padding-top: 20px;

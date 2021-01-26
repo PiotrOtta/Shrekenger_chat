@@ -26,14 +26,15 @@ body {
 }
 /* pokoje w czacie */
 .ListaPokoje {
-	position: absolute;
+	position: relative;
 	list-style-type: none;
+	float:right;
 	width: 100%;
 	left: -0;
 	line-height: 0.7em;
 	list-style: none;
     padding-left: 0;
-	margin-top: 80px;
+	margin-top: 10px;
 	word-wrap: break-word;
 	/* overflow-y: scroll; */
 }
@@ -103,15 +104,14 @@ body {
 	position: relative;
 	width: 70%;
 	word-wrap: break-word;
-	top: 2%;
+	margin-top: 3%;
 }
 .profil .avatar {
 	top: 25px;
 }
 .dostepnePokoje{
 	position: relative;
-	top: 20px;
-	width: 200px;
+	margin-top: 10px;
 	float:right;
 	text-transform: uppercase;
 	color: #79C7C5;
@@ -123,8 +123,9 @@ body {
 	border-radius: 10px 0 0 10px;
 }
 .email {
+	position: relative;
 	color: #51800a;
-	font-size: .7em;
+	font-size: .6em;
 }
 
 .chatbox {
@@ -135,6 +136,17 @@ body {
 	border-radius: 12px;
 	box-shadow: 3px 3px 20px #999999;
 	z-index: 1;
+}
+@media only screen and (max-width: 991px) {
+	.chatbox {
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.chatbox {
+		width: 100%;
+		left: 0;
+	}
 }
 
 .GornyPasek {
@@ -304,6 +316,7 @@ input:focus {
 	box-shadow: -6px 7px 20px #999999;
 	padding-left: 10px;
 }
+
 .cointainerOsoby .profil .avatar{
 	position:absolute;
 	width:70%;
@@ -322,25 +335,27 @@ input:focus {
 }
 .cointainerOsoby .dostepniUzytkownicy {
 	position: relative;
-	margin-top: 60px;
+	margin-top: 40%;
 	text-transform: uppercase;
 	color: #79C7C5;
-	font-size: 1em;
+	font-size: 0.6em;
 	letter-spacing: 2px;
 	font-weight: 500;
 	background-color:black;
 	padding: 10px;
 	border-radius: 10px 0 0 10px;
+	overflow-wrap: break-word;
 }
 .cointainerOsoby .ListaUzytkownikow {
-	position: absolute;
+	margin-top: 10px;
+	position: relative;
 	list-style-type: none;
 	width: 100%;
 	left: -0;
 	line-height: 1em;
 	list-style: none;
     padding-left: 0;
-	max-height: 280px;
+	max-height: 366px;
 	overflow-y: scroll;
 }
 .cointainerOsoby .ListaUzytkownikow .user {
@@ -379,3 +394,4 @@ footer p {
   background: lightgrey;
   border-radius: 5px;
 }
+
