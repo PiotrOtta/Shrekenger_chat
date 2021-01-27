@@ -25,15 +25,23 @@ body {
 					1000px 500px,
 					3000px 700px,
 					400px 260px;
-	animation: 100s warstwy_animacja infinite linear;
+	animation: 200s warstwy_animacja infinite linear;
 }
 @keyframes warstwy_animacja {
-	100% {
+	50% {
 		background-position:
-						-5000px 300px,
+						-5000px 500px,
 						-800px 100%,
 						500px 20%,
 						0 60%,
 						400px 0;
+	}
+	100% {
+		background-position:
+						00px 500px,
+						0px 100%,
+						0px 20%,
+						0 60%,
+						0px 0;
 	}
 }
