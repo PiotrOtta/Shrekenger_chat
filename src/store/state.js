@@ -1,6 +1,9 @@
+import {Rooms} from "@/rooms";
+
 export default {
-    activeRoom: null,
+    activeRoom: Rooms[0].id,
     nickName: null,
     rooms: [],
+    isInitialized: false,
     userOnline: []
 }

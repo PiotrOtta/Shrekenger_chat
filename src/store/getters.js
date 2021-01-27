@@ -1,4 +1,6 @@
-export default {
-    getActiveRoomName: state => state.rooms[state.activeRoom].name,
+import {Rooms} from "@/rooms";
 
+export default {
+    getActiveRoomName: state => Rooms.find(x => x.id === state.activeRoom)?.name,
+    getActiveRoom: state => state.activeRoom
 }

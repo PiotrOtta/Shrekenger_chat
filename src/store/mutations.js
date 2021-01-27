@@ -1,6 +1,8 @@
-export const SET_NICKNAME = "SET_NICKNAME";
 export default {
     SET_NICKNAME(state, nick){
         state.nickName = nick;
+    },
+    SET_ACTIVE_ROOM(state, roomID){
+        state.activeRoom = roomID;
     }
 }

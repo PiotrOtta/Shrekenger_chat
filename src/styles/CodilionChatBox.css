@@ -36,11 +36,6 @@
     letter-spacing: 1px;
     color: #888888;
 }
-.ListaPokoje .preview {
-    color: #51800a;
-    margin-left: 14px;
-    font-size: 0.8em;
-}
 .pokoj {
 	position: relative;
 	background: #fafffb;
@@ -128,8 +123,18 @@
 }
 @media only screen and (max-width: 575px) {
 	.chatbox {
-		width: 100%;
-		left: 0;
+		width: 90%;
+		left: 10%;
+	}
+	.containerPokoje {
+		width: 10%;
+		height: 31%;
+	}
+	.focus {
+		background-color: rgb(116, 209, 76);
+	}
+	.focus:after {
+		content: "";
 	}
 }
 
