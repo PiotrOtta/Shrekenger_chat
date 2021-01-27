@@ -1,6 +1,11 @@
 <template>
   <div class="container-fluid" id="app">
-    <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Shrekenger.png">
+    <div class="card">
+      <div class="content">
+        <p>Najlepszy czat na bagnie!</p>
+      </div>
+      <img id="Shrekenger" alt="Shrekenger logo" src="./assets/Shrekenger.png">
+    </div>
     <Shrekenger msg="Shrekenger"/>
   </div>
 </template>
@@ -18,21 +23,10 @@ export default {
 
 
 <style>
-/*html {
-  margin: 0 auto;
-  height: auto;
-  width: 100%;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(120deg, #2effbc, #4bbb1d);
-  overflow: hidden;
-}*/
 @import "styles/parallax_bg.scss";
 @import "styles/CodilionChatBox.css";
 @import "styles/CodilionWaveButton.css";
+@import "styles/CodilionResponsiveCard.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

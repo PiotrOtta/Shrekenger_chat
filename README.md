@@ -20,8 +20,9 @@ Michał Kuźmiński 18888 </br>
 <p>Instalacja projektu</p>
 vue create shrekenger |Vue 2</br>
 npm install bootstrap@next</br>
-npm i @popperjs/core</br>
-npm install --save portal-vue</br>
 npm install vue bootstrap bootstrap-vue</br>
 npm i node-sass sass-loader
+npm i -s socket.io-client && npm i -s vuex
 //copy github hierarchy</br>
+<hr />
+or just open project and npm install

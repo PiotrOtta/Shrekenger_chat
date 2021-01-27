@@ -1,22 +1,21 @@
 import Vue from 'vue'
 import App from './App.vue'
-import PortalVue from 'portal-vue'
 import { BootstrapVue, LayoutPlugin } from 'bootstrap-vue'
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import store from './store'
 
 Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
-
-Vue.use(PortalVue)
 Vue.use(BootstrapVue)
 Vue.use(LayoutPlugin)
 
+new Vue({
+  store,
+  render: h => h(App),
+}).$mount('#app')
+
 //ważne do użycia
 //  https://popper.js.org/
-//  https://portal-vue.linusb.org/
 //  https://bootstrap-vue.org/docs
