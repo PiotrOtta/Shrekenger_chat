@@ -16,8 +16,9 @@ export default {
 }
 </script>
 
+
 <style>
-html {
+/*html {
   margin: 0 auto;
   height: auto;
   width: 100%;
@@ -28,8 +29,10 @@ body {
   width: 100%;
   background: linear-gradient(120deg, #2effbc, #4bbb1d);
   overflow: hidden;
-}
-
+}*/
+@import "styles/parallax_bg.scss";
+@import "styles/CodilionChatBox.css";
+@import "styles/CodilionWaveButton.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

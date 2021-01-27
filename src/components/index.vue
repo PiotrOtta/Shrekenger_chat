@@ -55,28 +55,23 @@
 			<div class="dostepnePokoje d-none d-sm-block">Dostępne pokoje</div>
 			<ul class="ListaPokoje">
 				<li class="pokoj focus">
-					<span class="title">Pokój 1: Bagno </span>
-					<span class="time">21:37</span><br>
+          <span class="title">Pokój 1: Bagno </span><br />
 					<span class="preview">Tasdasd asd ad asdss.</span>
 				</li>
 				<li class="pokoj">
-					<span class="title">Pokój 2: Dom Shreka </span>
-					<span class="time">2:30</span><br>
+					<span class="title">Pokój 2: Dom Shreka </span><br />
 					<span class="preview">Lorem ipsum.</span>
 				</li>
 				<li class="pokoj">
-					<span class="title">Pokój 3: Zamek Lorda Farquaada </span>
-					<span class="time">15:15</span><br>
+					<span class="title">Pokój 3: Zamek Lorda Farquaada </span><br />
 					<span class="preview">Lorem ipsum.</span>
 				</li>
 				<li class="pokoj">
-					<span class="title">Pokój 4: Gospoda Zacisze</span>
-					<span class="time">0:12</span><br>
+					<span class="title">Pokój 4: Gospoda Zacisze</span><br />
 					<span class="preview">Lorem ipsum.</span>
 				</li>
 				<li class="pokoj">
-					<span class="title">Pokój 5: Bajo-jajo</span>
-					<span class="time">14:59</span><br>
+					<span class="title">Pokój 5: Bajo-jajo</span><br />
 					<span class="preview">Lorem ipsum.</span>
 				</li>
 			</ul>

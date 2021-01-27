@@ -23,4 +23,5 @@ npm install bootstrap@next</br>
 npm i @popperjs/core</br>
 npm install --save portal-vue</br>
 npm install vue bootstrap bootstrap-vue</br>
+npm i node-sass sass-loader
 //copy github hierarchy</br>

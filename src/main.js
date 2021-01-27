@@ -13,7 +13,6 @@ new Vue({
 }).$mount('#app')
 
 Vue.use(PortalVue)
-// Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
 Vue.use(LayoutPlugin)
 
