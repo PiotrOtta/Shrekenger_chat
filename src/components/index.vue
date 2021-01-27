@@ -8,11 +8,10 @@
 }
 </style>
 <template>
-	<div class="container">
 		<div class="chatbox">
 			<div class="GornyPasek">
 				<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-				<div class="name">Pokój 1: Bagno</div>
+				<div class="name">{{ getActiveRoomName }}</div>
 			</div>
 			<div class="middle">
 				<div>
@@ -51,88 +50,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="containerPokoje d-none d-sm-block">
-			<div class="dostepnePokoje d-none d-sm-block">Dostępne pokoje</div>
-			<ul class="ListaPokoje">
-				<li class="pokoj focus">
-					<span class="title">Pokój 1: Bagno </span>
-					<span class="time">21:37</span><br>
-					<span class="preview">Tasdasd asd ad asdss.</span>
-				</li>
-				<li class="pokoj">
-					<span class="title">Pokój 2: Dom Shreka </span>
-					<span class="time">2:30</span><br>
-					<span class="preview">Lorem ipsum.</span>
-				</li>
-				<li class="pokoj">
-					<span class="title">Pokój 3: Zamek Lorda Farquaada </span>
-					<span class="time">15:15</span><br>
-					<span class="preview">Lorem ipsum.</span>
-				</li>
-				<li class="pokoj">
-					<span class="title">Pokój 4: Gospoda Zacisze</span>
-					<span class="time">0:12</span><br>
-					<span class="preview">Lorem ipsum.</span>
-				</li>
-				<li class="pokoj">
-					<span class="title">Pokój 5: Bajo-jajo</span>
-					<span class="time">14:59</span><br>
-					<span class="preview">Lorem ipsum.</span>
-				</li>
-			</ul>
-		</div>
-		<div class="cointainerOsoby d-none d-lg-block">
-			<div class="profil">
-				<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-				<div class="name2">Shrek<p class="email text-wrap">Twoja nazwa</p></div>
-			</div>
-			<div class="dostepniUzytkownicy d-none d-sm-block">Dostępni użytkownicy</div>
-			<ul class="ListaUzytkownikow">
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Shrek </span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Jakiś inny fagas </span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Pioter </span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Mathew</span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Bydle</span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Bydle</span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Bydle</span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Bydle</span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Bydle</span>
-				</li>
-				<li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Bydle</span>
-				</li>
-        <li class="user">
-					<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
-					<span class="title">Bydle</span>
-				</li>
-			</ul>
-		</div>
-	</div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex';
+
+export default {
+  computed: {
+    ...mapGetters(["getActiveRoomName"])
+  }
+}
+
+</script>

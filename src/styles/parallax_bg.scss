@@ -1,0 +1,47 @@
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+body {
+	background-attachment: fixed;
+	background-color: hsla(193, 89%, 90%, 0.59);
+	background-image:
+					url("../assets/img/warstwa01.png"),
+					url('../assets/img/warstwa02.png'),
+					url('../assets/img/warstwa03.png'),
+					url('../assets/img/warstwa04.png'),
+					url('../assets/img/warstwa05.png');
+	background-repeat: repeat-x;
+	background-position:
+					0 500px,
+					0 100%,
+					0 20%,
+					0 60%,
+					0 0;
+	background-size:
+					1500px,
+					1400px,
+					1000px 500px,
+					3000px 700px,
+					400px 260px;
+	animation: 200s warstwy_animacja infinite linear;
+}
+@keyframes warstwy_animacja {
+	50% {
+		background-position:
+						-5000px 500px,
+						-800px 100%,
+						500px 20%,
+						0 60%,
+						400px 0;
+	}
+	100% {
+		background-position:
+						00px 500px,
+						0px 100%,
+						0px 20%,
+						0 60%,
+						0px 0;
+	}
+}

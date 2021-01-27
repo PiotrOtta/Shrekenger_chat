@@ -1,0 +1,43 @@
+<template>
+  <div class="containerPokoje d-sm-block">
+    <div class="dostepnePokoje d-none d-sm-block">Dostępne pokoje</div>
+    <ul class="ListaPokoje">
+      <li
+          v-for="room in rooms"
+          :key="room.id"
+          class="pokoj"
+          :class="{focus:activeRoom === room.id}"
+          @click="changeRoom(room.id)"
+      >
+        <span class="title d-none d-sm-block">{{room.name}}</span>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+import {Rooms} from "@/rooms";
+import {mapGetters, mapMutations} from "vuex";
+
+export default {
+name: "AvaiableRooms",
+  data: () => ({
+    rooms: Rooms
+  }),
+  methods: {
+    ...mapMutations({
+      changeRoom: "SET_ACTIVE_ROOM",
+    })
+  },
+  computed: {
+    ...mapGetters({activeRoom:"getActiveRoom"})
+  },
+  // mounted() {
+  //   console.info(this.activeRoom)
+  // }
+}
+</script>
+
+<style scoped>
+
+</style>
