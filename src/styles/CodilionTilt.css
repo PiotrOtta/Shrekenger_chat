@@ -1,0 +1,102 @@
+.Container3D {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* WAŻNE do działania efektu 3D */
+	transform-style: preserve-3d;
+}
+.Container3D .Box3D {
+	margin: 30px;
+	position: relative;
+	min-height:150px;
+	min-width: 150px;
+	background: transparent;
+	border-radius: 20px;
+	transform-style: preserve-3d;
+}
+.Container3D .Box3D::before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left:20px;
+	font-size: 2em;
+	font-weight: 900;
+	color: black;
+	font-style: italic;
+	opacity: 0;
+	transition: 0.5s;
+}
+.Container3D .Box3D::after{
+	content: '2021';
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+	font-size: 1em;
+	font-weight: 900;
+	color: black;
+	font-style: italic;
+	opacity: 0;
+	/* transform: rotate(-15deg); */
+	transition: 0.5s;
+}
+.Container3D .Box3D:hover::after,
+.Container3D .Box3D:hover::before{
+	opacity: 0.08;
+}
+.Container3D .Box3D .name {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	text-align: center;
+	color: black;
+	width: 60%;
+	transform-style: preserve-3d;
+	transform: translate3d(0,-20%,90px);
+	transition: 0.5s;
+	opacity: 0;
+	z-index: 10;
+}
+.Container3D .Box3D:hover .name {
+	top:10px;
+	opacity: 0.8;
+}
+.Container3D .Box3D .Object3D {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 200px;
+	transition: 0.5s;
+	z-index: 13;
+	transform-style: preserve-3d;
+	transform: translate3d(-50%,-50%,50px) rotate(0);
+}
+.Container3D .Box3D:hover{
+	background: rgba(255,255,255,0.7);
+}
+@media only screen and (max-width: 575px) {
+	.Container3D .Box3D {
+		min-height:100px;
+		min-width: 100px;
+	}
+	.Container3D .Box3D .Object3D {
+		height: 105px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
