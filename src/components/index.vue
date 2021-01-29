@@ -12,6 +12,7 @@
 			<div class="GornyPasek">
 				<div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
 				<div class="name">{{ getActiveRoomName }}</div>
+        <span class="badge d-sm-none">0 użytkowników w pokoju</span>
 			</div>
 			<div class="middle">
 				<div>
