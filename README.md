@@ -14,7 +14,7 @@ Michał Kuźmiński 18888 </br>
 <h2>Logo Shrekenger</h2>
 <img src="https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/main/src/assets/Shrekenger.png" width="256">
 
-<h2>Zrzut ekranu przedstawiający chat Shrekenger</h2>
+<h2>OUTDATED! Zrzut ekranu przedstawiający chat Shrekenger</h2>
 <img src="https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/OCS-17/HTML%20CSS%20ChatBox%20Design/Assets/ShrekengerChat.png" width="700">
 
 <h1>WAŻNE</h1>
