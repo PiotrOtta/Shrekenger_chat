@@ -25,8 +25,8 @@ vue create shrekenger |Vue 2</br>
 npm install bootstrap@next</br>
 npm install vue bootstrap bootstrap-vue</br>
 npm i node-sass sass-loader
-npm i -s socket.io-client && npm i -s vuex
-npm i vanilla-tilt
+npm i -s socket.io-client && npm i -s vuex</br>
+npm i vanilla-tilt </br>
 //copy github hierarchy</br>
 <hr />
 or just open project and npm install
