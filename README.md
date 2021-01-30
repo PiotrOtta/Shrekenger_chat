@@ -26,6 +26,7 @@ npm install bootstrap@next</br>
 npm install vue bootstrap bootstrap-vue</br>
 npm i node-sass sass-loader
 npm i -s socket.io-client && npm i -s vuex
+npm i vanilla-tilt
 //copy github hierarchy</br>
 <hr />
 or just open project and npm install
