@@ -48,8 +48,8 @@ io.on(HeadersInternal.CONNECTION, socket => {
         socket.emit(header, body);
     }
 
-    function getUserName(getUserId = userId) {
-        return onlineUsers.get(getUserId);
+    function getUserName(getUserId) {
+        return onlineUsers.get(getUserId ?? userId);
     }
 
     function getAllUsersInRoom() {
