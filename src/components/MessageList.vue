@@ -3,6 +3,7 @@
     <Message v-for="(message, key) in getMessages"
              :key = "key"
              :from="message.from"
+<<<<<<< Updated upstream
              :message="message.message"/>
   </div>
 
@@ -27,6 +28,12 @@
 <!--      <div class="kulka trzecia"></div>-->
 <!--    </div>-->
 <!--  </div>-->
+=======
+             :message="message.message"
+    ></Message>
+    <div style="width:100%;float: right" id="scrollDown"></div>
+  </div>
+>>>>>>> Stashed changes
 </template>
 
 <script>

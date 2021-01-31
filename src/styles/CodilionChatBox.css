@@ -194,6 +194,10 @@
 	width: 80%;
 	padding: 5px;
 	word-wrap: break-word;
+<<<<<<< Updated upstream
+=======
+	white-space: pre-wrap;
+>>>>>>> Stashed changes
 	float:left;
 	padding-top: 15px;
 }
@@ -222,6 +226,10 @@
 	width: 70%;
 	padding: 5px;
 	word-wrap: break-word;
+<<<<<<< Updated upstream
+=======
+	white-space: pre-wrap;
+>>>>>>> Stashed changes
 	right: 0;
 	height: 100%;
 	float: right;
