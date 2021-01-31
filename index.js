@@ -108,10 +108,7 @@ io.on(HeadersInternal.CONNECTION, socket => {
     // Gdy użytkownik się rozłączy
     socket.on(HeadersInternal.DISCONNECT, () => {
         sendToRoom(HeadersOutcoming.USER_LEFT, getUserName());
-<<<<<<< Updated upstream
-=======
         usersInRooms[`room_${selectedRoom}`].delete(onlineUsers.get(userId));
->>>>>>> Stashed changes
         onlineUsers.delete(userId);
     });
 });
