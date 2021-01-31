@@ -13,12 +13,5 @@
   },
   "scripts": {
     "start": "node index.js"
-<<<<<<< Updated upstream
-  },
-  "engines": {
-	"node": "14.15.0",
-	"npm": "6.14.8"
-=======
->>>>>>> Stashed changes
   }
 }
