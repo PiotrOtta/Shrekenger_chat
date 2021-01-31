@@ -1,16 +1,30 @@
 import io from 'socket.io-client';
+import { IncomingHeaders, InternalHeaders, OutcomingHeaders } from '../consts/headers';
 
 export default class SocketService {
     constructor(store) {
-        this.store = store;
-        //zmienić local hosta tam gdzie będzie hostowane
-        this.io = io('http://localhost:3000');
-        this.io.on("connect", () => {
+        this.io = io();
+        this.io.on(InternalHeaders.CONNECT, () => {
+            this.setupEventListeners(store);
             this.initialized = true;
+        });
+    }
+    //tutaj są wszystkie zdarzenia ktore przychodzą a backendu
+    setupEventListeners(store) {
+        this.io.on(IncomingHeaders.NEW_MESSAGE, (messageObj) => {
+            store.commit('ADD_MESSAGE', messageObj);
+        });
 
-            this.io.on("received message", ({from, message}) => {
-                this.store.dispatch("addMessage", from, message);
-            });
+        this.io.on(IncomingHeaders.USER_LEFT, (user) => {
+            store.commit('DELETE_USER', user);
+        });
+
+        this.io.on(IncomingHeaders.USER_JOINED, (user) => {
+            store.commit('ADD_USER', user);
+        });
+
+        this.io.on(IncomingHeaders.USERS_ONLINE, (usersOnline) => {
+            store.commit('SET_USERS_ONLINE', usersOnline);
         });
     }
 
@@ -22,11 +36,15 @@ export default class SocketService {
         this.io.emit(header, message);
     }
 
-    sendMessage(from, message) {
-        this.send("sendMessage", {from, message});
+    sendMessage(message) {
+        this.send(OutcomingHeaders.SEND_MESSAGE, message);
     }
 
     setNickName(nickName) {
-        this.io.emit(nickName);
+        this.send(OutcomingHeaders.CHANGE_USERNAME, nickName);
+    }
+    //array splice
+    joinRoom(roomId) {
+        this.send(OutcomingHeaders.JOIN_ROOM, roomId);
     }
 }

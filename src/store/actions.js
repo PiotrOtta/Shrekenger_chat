@@ -4,15 +4,22 @@ let socketService = null;
 
 export default {
     //destrukturyzacja
-    initService({state}){
-        if(!state.isInitialized){
+    initService({state}) {
+        if (!state.isInitialized) {
             socketService = new SocketService(this);
         }
     },
-    addMessage({state}, from, message){
-        state.messages.push({from, message});
+    sendMessage(store, message) {
+        store.commit("ADD_MESSAGE", {from:store.state.nickName, message});
+        socketService.sendMessage(message);
     },
-    sendMessage({state}, message){
-        socketService.sendMessage(state.nickName, message);
-    }
+    setNickName(store, nickName) {
+        store.commit("SET_NICKNAME", nickName);
+        socketService.setNickName(nickName);
+    },
+    joinRoom(store, roomId) {
+        store.commit("SET_ACTIVE_ROOM", roomId);
+        store.commit("CLEAR_MESSAGES");
+        socketService.joinRoom(roomId);
+    },
 }

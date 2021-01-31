@@ -7,9 +7,9 @@
           :key="room.id"
           class="pokoj"
           :class="{focus:activeRoom === room.id}"
-          @click="changeRoom(room.id)"
+          @click="joinRoom(room.id)"
       >
-        <span class="title d-none d-sm-block">{{room.name}}</span>
+        <span class="title d-none d-sm-block">{{ room.name }}</span>
       </li>
     </ul>
   </div>
@@ -17,27 +17,30 @@
 
 <script>
 import {Rooms} from "@/rooms";
-import {mapGetters, mapMutations} from "vuex";
+import {mapGetters, mapActions} from "vuex";
 
 export default {
-name: "AvaiableRooms",
+  name: "AvaiableRooms",
   data: () => ({
     rooms: Rooms
   }),
   methods: {
-    ...mapMutations({
-      changeRoom: "SET_ACTIVE_ROOM",
-    })
+    ...mapActions(["joinRoom"]),
+    joinDefaultRoom() {
+      setTimeout(() => {
+        if (this.getUserName) {
+          this.joinRoom(this.activeRoom);
+        } else {
+          this.joinDefaultRoom();
+        }
+      }, 100)
+    }
   },
   computed: {
-    ...mapGetters({activeRoom:"getActiveRoom"})
+    ...mapGetters({activeRoom: "getActiveRoom", getUserName: "getUserName"})
   },
-  // mounted() {
-  //   console.info(this.activeRoom)
-  // }
+  mounted() {
+    this.joinDefaultRoom();
+  }
 }
 </script>
-
-<style scoped>
-
-</style>

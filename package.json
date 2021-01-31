@@ -41,7 +41,9 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "vue/require-v-for-key": "off"
+      "vue/require-v-for-key": "off",
+      "no-debugger": "off",
+      "vue/valid-template-root": "off"
     }
   },
   "browserslist": [

@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid" id="app">
     <div class="Container3D">
-    <div class="Box3D">
-      <img class="name" src="./assets/codilion.png">
-      <img src="./assets/Shrekenger.png" class="Object3D" />
-    </div>
+      <div class="Box3D">
+        <img class="name" src="./assets/codilion.png">
+        <img src="./assets/Shrekenger.png" class="Object3D"/>
+      </div>
     </div>
     <div class="container d-flex">
       <DostepnePokoje/>
@@ -16,7 +16,7 @@
 
 <script>
 import Shrekenger from './components/index.vue'
-import { mapActions } from 'vuex';
+import {mapActions} from 'vuex';
 import DostepnePokoje from './components/AvaiableRooms.vue'
 import DostepniUzytkownicy from './components/AvaiableUsers.vue'
 import VanillaTilt from 'vanilla-tilt'
@@ -31,7 +31,7 @@ export default {
   methods: {
     ...mapActions(["initService"])
   },
-  created(){
+  created() {
     this.initService();
   },
   mounted() {
@@ -43,11 +43,13 @@ export default {
 }
 </script>
 
+
 <style>
 @import "styles/parallax_bg.scss";
 @import "styles/CodilionChatBox.css";
 @import "styles/CodilionWaveButton.css";
 @import "styles/CodilionTilt.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,8 +57,15 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
 footer {
   padding-top: 20px;
   overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 575px) {
+  #Shrekenger {
+    max-height: 105px;
+  }
 }
 </style>
