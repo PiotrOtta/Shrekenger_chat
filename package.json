@@ -1,7 +1,7 @@
 {
   "name": "shrekenger-chat",
   "version": "0.0.1",
-  "description": "Mateusz jest popierdolony",
+  "description": "Shrekenger",
   "main": "index.js",
   "author": "Mateusz Palewski - Backend",
   "private": true,
