@@ -11,7 +11,7 @@
 
 <script>
 import {mapActions} from 'vuex'
-import vscroll from 'vue-scrollto'
+import vscroll from "vue-scrollto";
 
 export default {
   name: "MessageInput",
@@ -28,7 +28,7 @@ export default {
     },
     sendMessageByInput({key, keyCode}) {
       if (key === 'Enter' || keyCode === 13) {
-        vscroll.scrollTo('#scrollDown')
+        vscroll.scrollTo('#scrollDown');
         this.sendMsg();
       }
     },
