@@ -1,7 +1,7 @@
 <template>
   <div :class="{incoming: !mine, outgoing: mine}">
     <div class="bubble">
-      <p class="text-success bg-white p-1 rounded">{{ from }}</p>
+      <p class="badge" id="od_kogo">{{ from }}</p>
       <p>{{ message }}</p>
     </div>
   </div>

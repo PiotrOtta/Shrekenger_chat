@@ -2,10 +2,11 @@
   <div class="profil">
     <div class="avatar"><img src="../assets/Logo_Shrekenger_gradient.png"/></div>
     <div class="name2">
-      {{ getUserName }}
-      <span @click="inputNickName" class="btn-link" style="cursor: pointer">
-      Zmień nick
-      </span>
+      {{ getUserName }}<br>
+      <button type="button" @click="inputNickName" class="btn btn-success btn-sm" id="do_zmiany"
+              style="cursor: pointer">
+        Zmień
+      </button>
     </div>
   </div>
 </template>
@@ -20,10 +21,10 @@ export default {
   },
   methods: {
     ...mapActions(['setNickName']),
-    inputNickName(){
+    inputNickName() {
       const Nickname = prompt("Podaj nazwę");
 
-      if(Nickname){
+      if (Nickname) {
         this.attemptChangeNickname(Nickname);
         return;
       }
@@ -39,7 +40,7 @@ export default {
       }, 100);
     }
   },
-  mounted(){
+  mounted() {
     this.inputNickName()
   }
 }

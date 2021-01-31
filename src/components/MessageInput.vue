@@ -1,12 +1,8 @@
 <template>
   <div>
     <input v-model="message" @keyup="sendMessageByInput"
-           type="text" placeholder="Wpisz wiadomość..."/>
-<<<<<<< Updated upstream
-    <button @click="sendMsg" class="buttonix">
-=======
+           type="text" placeholder="Wpisz wiadomość..." maxlength="400" />
     <button @click="sendMsg" class="buttonix" v-scroll-to="'#scrollDown'">
->>>>>>> Stashed changes
       <span>Wyślij</span>
       <div class="wave"></div>
     </button>
@@ -24,8 +20,10 @@ export default {
   methods: {
     ...mapActions(["sendMessage"]),
     sendMsg() {
-      this.sendMessage(this.message);
-      this.message = null;
+      if(this.message != null){
+        this.sendMessage(this.message);
+        this.message = null;
+      }
     },
     sendMessageByInput({key, keyCode}) {
       if (key === 'Enter' || keyCode === 13) {

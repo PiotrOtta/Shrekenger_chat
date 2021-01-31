@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
 .container{
 	position: relative;
 	height: 550px;
@@ -187,6 +189,8 @@
 	font-size: 1em;
 	padding: 10px 10px 10px 12px;
 	border-radius: 20px;
+	overflow-wrap: break-word;
+	max-width: 60%;
 }
 
 .incoming {
@@ -194,10 +198,7 @@
 	width: 80%;
 	padding: 5px;
 	word-wrap: break-word;
-<<<<<<< Updated upstream
-=======
 	white-space: pre-wrap;
->>>>>>> Stashed changes
 	float:left;
 	padding-top: 15px;
 }
@@ -226,17 +227,10 @@
 	width: 70%;
 	padding: 5px;
 	word-wrap: break-word;
-<<<<<<< Updated upstream
-=======
 	white-space: pre-wrap;
->>>>>>> Stashed changes
 	right: 0;
 	height: 100%;
 	float: right;
-}
-.outgoing .test {
-	min-width:100%;
-	float:right;
 }
 .outgoing .bubble {
 	background: grey;
@@ -319,19 +313,30 @@ input:focus {
 	top: 18px;
 }
 .cointainerOsoby .profil .name2{
-	position:absolute;
+	position:relative;
 	width:70%;
-	left: 50px;
-	top: 18px;
+	margin-left: 50px;
+	top: 20px;
+	margin-bottom: 3px;
 	text-transform: uppercase;
 	color: black;
 	font-size: .8em;
 	letter-spacing: 2px;
 	font-weight: 500;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+#od_kogo{
+	color: rgb(116,209,76);
+	background-color: white;
+	border-radius: 11px 11px 5px 5px;
+}
+#do_zmiany{
+	position: relative;
+	border-radius: 20px 20px 20px 20px;
 }
 .cointainerOsoby .dostepniUzytkownicy {
 	position: relative;
-	margin-top: 40%;
+	margin-top: 22px;
 	text-transform: uppercase;
 	color: #79C7C5;
 	font-size: 0.6em;
@@ -351,7 +356,7 @@ input:focus {
 	line-height: 1em;
 	list-style: none;
     padding-left: 0;
-	max-height: 366px;
+	height: 355px;
 	overflow-y: scroll;
 }
 .cointainerOsoby .ListaUzytkownikow .user {
