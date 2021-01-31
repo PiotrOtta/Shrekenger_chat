@@ -68,12 +68,8 @@ io.on(HeadersInternal.CONNECTION, socket => {
             if (userName) {
                 sendToRoom(HeadersOutcoming.USER_LEFT, userName);
             }
-            else
-            {
-                sendToRoom(HeadersOutcoming.USER_JOINED, newUserName);
-            }
+            sendToRoom(HeadersOutcoming.USER_JOINED, newUserName);
         }
-
         onlineUsers.set(userId, newUserName);
     });
 
