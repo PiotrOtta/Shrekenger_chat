@@ -5,7 +5,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 
 // Pobierz wymagane stałe
-const { HeadersIncoming, HeadersInternal, HeadersOutcoming } = require('./headers');
+const {HeadersIncoming, HeadersInternal, HeadersOutcoming} = require('./headers');
 
 // Zainicjuj serwer
 const app = express();
@@ -35,7 +35,7 @@ const usersInRooms = {
 // Gdy użytkownik się połączy do socketu
 io.on(HeadersInternal.CONNECTION, socket => {
     const userId = socket.client.id;
-    let selectedRoom = null;
+    let selectedRoom = 1;
 
     // Wyślij wiadomość do bieżącego pokoju
     function sendToRoom(header, body) {
@@ -105,8 +105,8 @@ io.on(HeadersInternal.CONNECTION, socket => {
 
     // Gdy użytkownik się rozłączy
     socket.on(HeadersInternal.DISCONNECT, () => {
-        sendToRoom(HeadersOutcoming.USER_LEFT, getUserName());
         usersInRooms[`room_${selectedRoom}`].delete(userId);
+        sendToRoom(HeadersOutcoming.USER_LEFT, getUserName());
         onlineUsers.delete(userId);
     });
 });
