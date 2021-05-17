@@ -1,5 +1,3 @@
-# Otta_Projekt_Zaliczeniowy
-
 # Projekt Zaliczeniowy - Chat
 Project name - Shrekenger </br>
 
