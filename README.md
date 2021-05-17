@@ -24,5 +24,4 @@ npm i node-sass sass-loader
 npm i -s socket.io-client && npm i -s vuex
 //copy github hierarchy</br>
 <hr />
-or just open project and:
-### `npm install`
+or just open project and run: npm install
