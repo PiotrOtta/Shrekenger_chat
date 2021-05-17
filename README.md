@@ -12,6 +12,8 @@ Michał Kuźmiński 18888 Front-end</br>
 <img src="https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/main/public/img/Shrekenger.2da771dd.png" width="256">
 
 <h2>Screenshot of Shrekenger chat</h2>
+<img src="https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/OCS-17/HTML%20CSS%20ChatBox%20Design/Assets/shrekenger_full.png" width="700">
+<h2>Screenshot of early stages of Shrekenger chat</h2>
 <img src="https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/OCS-17/HTML%20CSS%20ChatBox%20Design/Assets/ShrekengerChat.png" width="700">
 
 <p>The hierarchy does not include Node Modules folder.</p>
