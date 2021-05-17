@@ -6,6 +6,9 @@ Piotr Otta       18902 Full-stack</br>
 Mateusz Palewski 18903 Back-end</br>
 Michał Kuźmiński 18888 Front-end</br>
 
+### You can check out the app at herokuapp:
+http://shrekenger.herokuapp.com/
+
 <h2>Logo Shrekenger</h2>
 <img src="https://github.com/PiotrOtta/Otta_Projekt_Zaliczeniowy/blob/main/public/img/Shrekenger.2da771dd.png" width="256">
 
